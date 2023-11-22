@@ -1,0 +1,41 @@
+#offer{
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+    @include Ground($ground_pos:center,$ground_repet:no-repeat,$ground_size:cover,);
+height: 400px;
+display: flex;
+align-items: center;
+justify-content: center;
+    .container{
+
+        .offer-text-info{
+           text-align: center;
+           width: 60%;
+           margin: 0 auto;
+           @media (max-width:768px) {
+            width: 100%;
+           }
+/* display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center; */
+
+            h3{
+             
+                color: $primary-black;
+                font-family: $primary-font;
+@include Text($f_size:32px,$l_heit:40px,$t_align:center,$f_weight:500);
+
+            }
+
+            button{
+                margin-top: 10px;
+@include  Img($wid:163px,$heit:41px);
+border-radius: 2px;
+border: 1px solid $btn-ground;
+background-color: transparent;
+            }
+        }
+    }
+}

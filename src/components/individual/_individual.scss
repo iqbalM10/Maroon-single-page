@@ -1,0 +1,82 @@
+#individual{
+
+    margin-top: 100px;
+    @media (max-width:480px) {
+        margin-bottom: 350px;
+     }
+   .container{
+display: flex;
+position: relative;
+@media (max-width:480px) {
+   display: block;
+}
+     .right-text-side{
+        background-color: #F4F1ED;
+        padding: 53px 160px 53px 110px;
+        text-align: left;
+
+        @media (max-width:480px) {
+            padding: 0px 0px 90px 0px;
+           
+        }
+        @media (max-width:688px) {
+            padding: 41px 122px 11px 27px;
+        }
+       
+
+        h3{
+            color: $primary-black;
+            font-family: $primary-font;
+            @include Text($f_weight:500,$f_size:32px,$l_heit:45.6px);
+        }
+
+        p{
+            max-width:329px;
+            color: $primary-black;
+            font-family: $primary-font;
+            @include Text($f_weight:400,$f_size:18px,$l_heit:26.1px);  
+        }
+
+        button{
+            @include Img($wid:200px,$heit:41px);
+            border-radius: 2px;
+            border: 1px solid $btn-ground;
+            background-color: transparent;
+        }
+    }
+
+    .image-side{
+        @include Img($pos:absolute,$right:6%);
+    padding: 30px 30px;
+
+    
+@media (max-width:480px) {
+    @include Img($pos:absolute,$wid:390px,$heit:319px,$botom:-251px);
+    /* right: 0; */
+    padding: 0;
+   
+    
+}
+
+
+
+@media (max-width:1024px) {
+   @include Img($pos:absolute,$right:1%,$wid:484px,$heit:446px);
+    padding: 30px 30px;
+   
+}
+
+@media (max-width:688px) {
+    @include Img($pos:absolute,$top:55px,$right:-16%,$wid:286px,$heit:327px);
+    padding: 30px 30px;
+    
+}
+        @include Img($wid:670px,$heit:451px);
+        img{
+          object-fit: cover;
+            @include Img($wid:100%,$heit:100%);
+            
+        }
+    }
+   }
+}

@@ -1,0 +1,43 @@
+
+#advertisement{
+    margin-top: 80px;
+    @include Ground($ground_pos:center,$ground_repet:no-repeat,$ground_size:cover,);
+    margin-bottom: 120px;
+    @include Img($heit:400px);
+    display: flex;
+    align-items: center;
+
+    @media (max-width:480px) {
+        width: 100%;
+height: 500px;
+
+
+    }
+  
+    
+
+    .text-area{
+        // @include Img($right:20%,$pos:absolute);
+// transform: translateY(50%);
+@media (max-width:688px) {
+    padding-left: 150px;
+}
+
+        h3{
+            font-family: $primary-font;
+            color: $primary-black;
+            @include Text($f_size:32px,$l_heit:40px,$f_weight:500);
+        }
+        p{
+            font-family: $secondary-font;
+            @include Text($f_weight:400,$f_size:18px,$l_heit:26.1px);
+        }
+
+        button{
+            @include Img($wid:141px,$heit:41px);
+            border: 1px solid $btn-ground;
+            border-radius: 2px;
+            background-color: transparent;
+        }
+    }
+}

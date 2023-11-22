@@ -1,0 +1,37 @@
+#contact{
+
+margin-top: 100px;
+  .contact-col{
+    background-color: $background-section;
+    
+    .contact-area{
+        padding: 40px 50px;
+        h3{
+            color: $primary-black;
+            font-family: $primary-font;
+            margin-bottom:20px;
+            @include Text($f_size:32px,$f_weight:500,$l_heit:41.6px);
+        }
+
+        h4{
+
+            color: $primary-black;
+            /* font-family: $secondary-font; */
+            @include Text($f_size:18px,$f_weight:500,$l_heit:26.1px);
+        }
+
+        p{
+            color: $primary-black;
+            font-family: $secondary-font;
+            @include Text($f_size:18px,$f_weight:400,$l_heit:26.1px);
+        }
+    }
+  }
+
+  .map-container{
+   iframe{
+    height: 500px;
+    width: 100%;
+   }
+  }
+}
